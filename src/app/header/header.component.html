@@ -1,0 +1,32 @@
+ <!-- ***** Header Area Start ***** -->
+ <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a [routerLink]="['home']" class="logo">
+                        <img src="../../assets/images/studio_pro_black1-400x450.png" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a [routerLink]="['home']" routerLinkActive="Active" [routerLinkActiveOptions]="{exact:true}">Home</a></li>
+                        <li><a [routerLink]="['explore']" routerLinkActive="Active">Explore</a></li>
+                        <li><a [routerLink]="['itemDetails']" routerLinkActive="Active">Item Details</a></li>
+                        <li><a [routerLink]="['author']" routerLinkActive="Active">Author</a></li>
+                        
+                    </ul>   
+                    
+
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+

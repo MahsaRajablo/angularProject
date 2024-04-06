@@ -1,0 +1,98 @@
+
+
+<div class="item-details-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <div class="line-dec"></div>
+            <!-- <h2><em><a [routerLink]="['/register']" routerLinkActive="Active" [routerLinkActiveOptions]="{exact:true}">Register</a>/<a [routerLink]="['/login']"  routerLinkActive="Active">Login</a></em></h2> -->
+          </div>
+        </div>
+
+
+        <div class="col-lg-12">
+          <form id="contact" action="" method="post" [formGroup]="registerForm">
+            <div class="row">
+              <div class="col-lg-4">
+                <fieldset>
+                  <label for="firstname">First Name</label>
+                  <input type="firstname" name="firstname" id="firstname" formControlName="fname" placeholder="Example: mahsa" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-4">
+                <fieldset>
+                  <label for="lastname">Last Name</label>
+                  <input type="lastname" name="lastname" id="lastname" formControlName="lname" placeholder="Example: Rajablo" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-4">
+                <fieldset>
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" formControlName="email" placeholder="Example: mahsarajablo@gmail.com" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password" formControlName="password" placeholder="Enter Your Password" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <label for="description">Description</label>
+                  <input type="description" name="description" id="description" formControlName="description" placeholder="Common royalties 1-25%" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-4">
+                <a [routerLink]="['/home']" class="logo">
+                  <img src="assets/images/logo.png" alt="">
+              </a>
+              </div>
+              <div class="col-lg-8">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="orange-button" (click)="onRegister()">Register</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <div class="line-dec"></div>
+            <h2>This Is <em>Your Item</em> Preview.</h2>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="left-image">
+            <img src="assets/images/create-yours.jpg" alt="" style="border-radius: 20px;">
+          </div>
+        </div>
+        <div class="col-lg-5 align-self-center">
+          <h4>Dolores Haze Westworld Eye</h4>
+          <span class="author">
+            <img src="assets/images/author-02.jpg" alt="" style="max-width: 50px; border-radius: 50%;">
+            <h6>Kataleya Smithee<br><a href="#">kataleey</a></h6>
+          </span>
+          <p>Lorem ipsum dolor sit amet, consectetu dipiscingei elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="row">
+            <div class="col-3">
+              <span class="bid">
+                Current Bid<br><strong>0.06 ETH</strong><br><em>($8055,35)</em>
+              </span>
+            </div>
+            <div class="col-4">
+              <span class="owner">
+                Owner<br><strong>Alan Smithee</strong><br><em>(asmithee)</em>
+              </span>
+            </div>
+            <div class="col-5">
+              <span class="ends">
+                Ends In<br><strong>3D 05H 20M 58S</strong><br><em>(January 22nd, 2021)</em>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
